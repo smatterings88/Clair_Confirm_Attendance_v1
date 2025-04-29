@@ -358,11 +358,17 @@ Check your email for your unique login—that's your access to the event. Checki
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-vip-tuesday-confirm-no"
 }
-
+(if they will not attend)
 "Aw, that’s a shame—So even though you can’t make it today for the special VIP session, Remember that check-in runs from 1 to 5 PM today Eastern 
 time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}? 
 
 "
+
+
+(if they are attending tomorrow)
+"Great, awesome! I am so glad you will be attending tomorrow as well.  Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
+to get there on time because Dannella starts promptly and rewards people that are there on time? 
+Also, the main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}?"
 
 (If they say they will attend, use the addContact tool with the following parameters:)
 {
@@ -370,10 +376,6 @@ time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM.
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-confirm-yes"
 }
-(if they are attending tomorrow)
-"Great, awesome! I am so glad you will be attending tomorrow as well.  Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
-to get there on time because Dannella starts promptly and rewards people that are there on time? 
-Do you have any other questions before we end the call today, ${clientName}?"
 
 (If they say they will not attend, use the addContact tool with the following parameters:)
 {
