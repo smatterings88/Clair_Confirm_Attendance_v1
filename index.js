@@ -383,7 +383,8 @@ time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM.
   tag: "update: events -> ve0525-confirm-no"
 }
 
-"Do you have any other questions before we end the call today, ${clientName}? We hope to see you later today for your special VIP session! Also, just to reiterate, we will be starting tomorrow at 11am EST. 
+"Do you have any other questions before we end the call today, ${clientName}?" (pause for 2 seconds)  "Okay, we hope to see you later today for your special VIP session! Also, just to reiterate, remember that check-in runs from 1 to 5 PM today 
+Eastern time and continues tomorrow starting at 9:30 AM. 
 Be sure to check your email for your special link to get into the event—that’s your digital ticket and it’s unique to you!"
 
 
