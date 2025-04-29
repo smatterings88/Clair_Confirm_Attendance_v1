@@ -334,16 +334,7 @@ Will you be joining us for that?"
   phoneNumber: "${phoneNumber}"
   tag: "events -> ve0525flash-call-left-message"
 }
-
-
 (When leaving a voice message, do not ask them to call back, instead say we will call you again.)
-
-(If they say they will attend)
-
-"Awesome,
-Now here are the things you need to know—
-
-Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST."
 
 (If they say they will attend, use the addContact tool with the following parameters:)
 {
@@ -352,18 +343,26 @@ Check your email for your unique login—that's your access to the event. Checki
   tag: "update: events -> ve0525-vip-tuesday-confirm-yes"
 }
 
+
 (If they say they will not attend, use the addContact tool with the following parameters:)
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-vip-tuesday-confirm-no"
 }
+
+(If they say they will attend)
+
+"Awesome,
+Now here are the things you need to know—
+
+Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST. "
+
+
+
 (if they will not attend)
 "Aw, that’s a shame—So even though you can’t make it today for the special VIP session, Remember that check-in runs from 1 to 5 PM today Eastern 
-time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}? 
-
-"
-
+time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}? "
 
 (if they are attending tomorrow)
 "Great, awesome! I am so glad you will be attending tomorrow as well.  Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
