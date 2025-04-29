@@ -359,9 +359,10 @@ Check your email for your unique login—that's your access to the event. Checki
   tag: "update: events -> ve0525-vip-tuesday-confirm-no"
 }
 
-"Aw, that’s a shame—it’s going to be a great session…if you CAN get there, definitely join us. Starting tomorrow at 11am EST. 
-We will be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today. 
-The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
+"Aw, that’s a shame—So even though you can’t make it today for the special VIP session, Remember that check-in runs from 1 to 5 PM today Eastern 
+time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}? 
+
+"
 
 (If they say they will attend, use the addContact tool with the following parameters:)
 {
@@ -370,7 +371,9 @@ The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
   tag: "update: events -> ve0525-confirm-yes"
 }
 (if they are attending tomorrow)
-"Awsome! I'll take note of that too!"
+"Great awesome make sure you check your email for your unique link that's gonna get you access to the event and be sure 
+to get there on time because Dannella starts promptly and rewards people that are there on time? 
+Do you have any other questions before we end the call today, ${clientName}?"
 
 (If they say they will not attend, use the addContact tool with the following parameters:)
 {
@@ -380,8 +383,7 @@ The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 }
 
 "That's it for now, ${clientName}. We hope to see you later today for your special VIP session! Also, just to reiterate, we will be starting tomorrow at 11am EST. 
-We will be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today. 
-The full event begins tomorrow at 11:00am (Wednesday)."
+Be sure to check your email for your special link to get into the event—that’s your digital ticket and it’s unique to you!"
 
 
 ⸻
