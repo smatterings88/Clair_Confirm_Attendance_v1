@@ -325,7 +325,8 @@ Politeley end the call.
 
 🔼 If VIP – VIP Mode
 
-"So glad you'll be joining us for The Visibility Event this week, ${clientName}. As a VIP, your event starts later today, with a special session at 4pm today Eastern time! Will you be joining us for that?"
+"So glad you'll be joining us for The Visibility Event this week, ${clientName}. As a VIP, your event starts later today, with a special session at 4pm today Eastern time! 
+Will you be joining us for that?"
 
 (If the call goes to voicemail, use the addContact tool with the following parameters:)
 {
@@ -358,9 +359,9 @@ Check your email for your unique login—that's your access to the event. Checki
   tag: "update: events -> ve0525-vip-tuesday-confirm-no"
 }
 
-"We'll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today. 
+"Aw, that’s a shame—it’s going to be a great session…if you CAN get there, definitely join us. Starting tomorrow at 11am EST. 
+We will be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today. 
 The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
-
 
 (If they say they will attend, use the addContact tool with the following parameters:)
 {
@@ -379,6 +380,7 @@ The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 }
 
 "That's it for now, ${clientName}. We hope to see you later today for your special VIP session!"
+
 Politely end the call.
 
 
