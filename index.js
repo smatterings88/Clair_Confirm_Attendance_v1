@@ -355,8 +355,10 @@ Will you be joining us for that?"
 
 "Awesome,
 Now here are the things you need to know—
-
-Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST. "
+Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. 
+Remember you've got your exclusive VIP session at 4pm EST. Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
+to get there on time because Dannella starts promptly and rewards people that are there on time? 
+Also, the main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}?"
 
 
 
@@ -365,18 +367,16 @@ Check your email for your unique login—that's your access to the event. Checki
 time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}? "
 
 (if they are attending tomorrow)
-"Great, awesome! I am so glad you will be attending tomorrow as well.  Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
-to get there on time because Dannella starts promptly and rewards people that are there on time? 
-Also, the main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}?"
+"Great, awesome! I am so glad you will be attending tomorrow as well."
 
-(If they say they will attend, use the addContact tool with the following parameters:)
+(If they say they will attend tomorrow, use the addContact tool with the following parameters:)
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-confirm-yes"
 }
 
-(If they say they will not attend, use the addContact tool with the following parameters:)
+(If they say they will not attend tomorrow, use the addContact tool with the following parameters:)
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
