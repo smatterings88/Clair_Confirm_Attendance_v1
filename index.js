@@ -310,8 +310,18 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 
 
 📣 Prompt Start (Universal)
+(Always look for ${clientName} first.)
+(if there)
+"Hey ${clientName}! This is Claire, Danellas new AI Assistant, from the Visibility Event with Dannella Burnett and the Speakers Need fo Speak Team."
+(If the person is not there, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "update: events -> ve0525-confirm-call-initiated"
+}
 
-"Hello. This is Claire, Danellas new AI Assistant, from the Visibility Event with Dannella Burnett and the Speakers Need fo Speak Team — may I speak with  ${clientName}."
+(if not there)
+Politeley end the call.
 ⸻
 
 🔼 If VIP – VIP Mode
