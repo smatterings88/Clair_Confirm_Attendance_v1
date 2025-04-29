@@ -325,7 +325,7 @@ Politeley end the call.
 
 🔼 If VIP – VIP Mode
 
-"So glad you'll be joining us for The Visibility Event this week, ${clientName}. As a VIP, your event starts later today, with a special session at 4pm today Eastern time! 
+"Hey ${clientName}, so glad you'll be joining us for The Visibility Event this week, . As a VIP, your event starts later today, with a special session at 4pm today Eastern time! 
 Will you be joining us for that?"
 
 (If the call goes to voicemail, use the addContact tool with the following parameters:)
