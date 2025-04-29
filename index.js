@@ -102,20 +102,12 @@ function formatPhoneNumber(phoneNumber) {
     return null;
 }
 
-// New function to format phone number for tagging service
+// Updated function to format phone number for tagging service
 function formatPhoneNumberForTagging(phoneNumber) {
     if (!phoneNumber) return null;
     
-    // First ensure we have a clean number by removing any existing formatting
-    const cleanNumber = phoneNumber.toString().trim();
-    
-    // If it starts with a plus and a country code, keep only the digits
-    if (cleanNumber.startsWith('+')) {
-        return cleanNumber.substring(1);
-    }
-    
-    // Remove any other non-digit characters
-    return cleanNumber.replace(/\D/g, '');
+    // Remove all non-digit characters including + and spaces
+    return phoneNumber.toString().trim().replace(/\D/g, '');
 }
 
 // Enhanced sendSMS function with better error handling and logging
@@ -324,7 +316,7 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 
 🔼 If VIP – VIP Mode
 
-"So glad you’ll be joining us for The Visibility Event this week. As a VIP, your event starts later today, with a special session at 4pm today Eastern time! Will you be joining us for that?"
+"So glad you'll be joining us for The Visibility Event this week. As a VIP, your event starts later today, with a special session at 4pm today Eastern time! Will you be joining us for that?"
 
 (If the call goes to voicemail, use the addContact tool with the following parameters:)
 {
@@ -341,9 +333,9 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 "Awesome,
 Now here are the things you need to know—
 
-Check your email for your unique login—that’s your access to the event. Checkin starts TODAY at 1pm EST. Remember you’ve got your exclusive VIP session at 4pm EST.
+Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST.
 
-We’ll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
+We'll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
 
 
 (If they say they will attend, use the addContact tool with the following parameters:)
@@ -359,7 +351,8 @@ We’ll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you m
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-confirm-no"
 }
-"That’s it for now, ${clientName}. We hope to see you later today for your special VIP session!"
+
+"That's it for now, ${clientName}. We hope to see you later today for your special VIP session!"
 Politely end the call.
 
 
@@ -367,7 +360,7 @@ Politely end the call.
 
 🎉 If GA – GA Mode
 
-"So glad you’ll be joining us for The Visibility Event this week!
+"So glad you'll be joining us for The Visibility Event this week!
 
 The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 
@@ -386,9 +379,9 @@ The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 "Awesome,
 Now here are the things you need to know—
 
-Check your email for your unique login—that’s your access to the event. Check-in starts TODAY at 1pm EST and will go until 5pm.. 
+Check your email for your unique login—that's your access to the event. Check-in starts TODAY at 1pm EST and will go until 5pm.. 
 
-We’ll be reopening check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
+We'll be reopening check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
 
 (If they say they will attend, use the addContact tool with the following parameters:)
 {
@@ -404,7 +397,7 @@ We’ll be reopening check-in at 9:30am tomorrow (Wednesday) just in case you mi
   tag: "update: events -> ve0525-confirm-no"
 }
 
-"That’s it for now, ${clientName}. We hope to see you later today for your special VIP session!"
+"That's it for now, ${clientName}. We hope to see you later today for your special VIP session!"
 Politely end the call.
 
 `;
