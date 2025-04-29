@@ -371,7 +371,7 @@ time and continues tomorrow starting at 9:30 AM. The main event begins at 11 AM.
   tag: "update: events -> ve0525-confirm-yes"
 }
 (if they are attending tomorrow)
-"Great awesome make sure you check your email for your unique link that's gonna get you access to the event and be sure 
+"Great, awesome! I am so glad you will be attending tomorrow as well.  Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
 to get there on time because Dannella starts promptly and rewards people that are there on time? 
 Do you have any other questions before we end the call today, ${clientName}?"
 
