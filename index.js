@@ -339,12 +339,27 @@ Politeley end the call.
 
 (If they say they will attend)
 
-"Awesome,
+"Awesome, let me take note of that.
 Now here are the things you need to know—
 
-Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST.
+Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. Remember you've got your exclusive VIP session at 4pm EST."
 
-We'll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
+(If they say they will attend, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "update: events -> ve0525-vip-tuesday-confirm-yes"
+}
+
+(If they say they will not attend, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "update: events -> ve0525-vip-tuesday-confirm-no"
+}
+
+"We'll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you miss it today. 
+The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 
 
 (If they say they will attend, use the addContact tool with the following parameters:)
@@ -353,6 +368,8 @@ We'll be reopening  check-in at 9:30am tomorrow (Wednesday) just in case you mis
   phoneNumber: "${phoneNumber}"
   tag: "update: events -> ve0525-confirm-yes"
 }
+(if they are attending tomorrow)
+"Awsome! I'll take note of that too!"
 
 (If they say they will not attend, use the addContact tool with the following parameters:)
 {
