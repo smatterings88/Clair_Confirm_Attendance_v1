@@ -384,7 +384,7 @@ Also, the main event begins at 11 AM. Tomorrow. Will you be joining us for that,
   tag: "update: events -> ve0525-confirm-no"
 }
 
-"That's it for now, ${clientName}. We hope to see you later today for your special VIP session! Also, just to reiterate, we will be starting tomorrow at 11am EST. 
+"Do you have any other questions before we end the call today, ${clientName}? We hope to see you later today for your special VIP session! Also, just to reiterate, we will be starting tomorrow at 11am EST. 
 Be sure to check your email for your special link to get into the event—that’s your digital ticket and it’s unique to you!"
 
 
