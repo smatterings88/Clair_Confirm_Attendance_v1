@@ -355,8 +355,8 @@ Will you be joining us for that?"
 
 "Awesome,
 Now here are the things you need to know—
-Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm EST. 
-Remember you've got your exclusive VIP session at 4pm EST. Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
+Check your email for your unique login—that's your access to the event. Checkin starts TODAY at 1pm Eastern time. 
+Remember you've got your exclusive VIP session at 4pm Eastern time. Make sure you check your email for your unique link that's gonna get you access to the event and be sure 
 to get there on time because Dannella starts promptly and rewards people that are there on time? 
 Also, the main event begins at 11 AM. Tomorrow. Will you be joining us for that, ${clientName}?"
 
@@ -410,7 +410,7 @@ The full event begins tomorrow at 11:00am (Wednesday). Will you be attending?"
 "Awesome,
 Now here are the things you need to know—
 
-Check your email for your unique login—that's your access to the event. Check-in starts TODAY at 1pm EST and will go until 5pm.. 
+Check your email for your unique login—that's your access to the event. Check-in starts TODAY at 1pm Eastern time and will go until 5pm.. 
 
 We'll be reopening check-in at 9:30am tomorrow (Wednesday) just in case you miss it today."
 
